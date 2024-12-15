@@ -2,7 +2,7 @@ body {
     margin: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'VT323', monospace; 
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38GIGBiQAP//wMEGAB89QgdpEjEyQAAAABJRU5ErkJggg==');
 }
 
@@ -16,6 +16,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     line-height: 1.2;
+    font-family: 'Press Start 2P', cursive; /* Retro headings */
 }
 
 /* Responsive adjustments */
@@ -45,4 +46,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
+}
+.special-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    color: #FFD700; /* Gold color for emphasis */
 }
