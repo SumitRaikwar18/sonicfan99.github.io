@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦔 SonicFan99's AWESOME Page!!!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/videos.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">🦔 SONICFAN99</div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link">HOME</a>
+                <a href="#fanart" class="nav-link">FAN ART</a>
+                <a href="#videos" class="nav-link">VIDEOS</a>
+                <a href="#quiz" class="nav-link">QUIZ</a>
+                <a href="#guestbook" class="nav-link">GUESTBOOK</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="app">
+        <div id="home">
+            <div class="header">
+                <h1>🦔 WELCOME TO SONICFAN99's PAGE!!! 🦔</h1>
+                <marquee scrollamount="5">!!!BEST VIEWED IN NETSCAPE NAVIGATOR!!!</marquee>
+            </div>
+
+            <section class="section">
+                <h2 class="blink">⚡ ABOUT ME ⚡</h2>
+                <p>WAY PAST COOL! I'm the biggest Sonic fan ever! Gotta go fast! 🏃‍♂️💨</p>
+            </section>
+        </div>
+
+        <section id="fanart" class="section">
+            <h2>🎨 RADICAL FAN ART! 🎨</h2>
+            <div class="gallery" id="fanArtGallery"></div>
+            <p class="blink gallery-note">⚡ HOVER OVER IMAGES FOR A COOL EFFECT! ⚡</p>
+        </section>
+
+        <section id="videos" class="section">
+            <h2>📺 TOTALLY RAD VIDEOS! 📺</h2>
+            <div class="video-grid" id="videoGrid"></div>
+        </section>
+
+        <section class="section">
+            <h2>🎮 MY FAVORITE SONIC GAMES 🎮</h2>
+            <ul id="gameList"></ul>
+        </section>
+
+        <section id="quiz" class="section">
+            <h2>🌟 SONIC TRIVIA QUIZ! 🌟</h2>
+            <div class="quiz">
+                <div class="quiz-question">
+                    <p>What is Sonic's best friend's name?</p>
+                    <button data-answer="tails">Tails</button>
+                    <button data-answer="knuckles">Knuckles</button>
+                    <button data-answer="amy">Amy</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="guestbook" class="section">
+            <h2>📝 SIGN MY GUESTBOOK! 📝</h2>
+            <div class="comments">
+                <form class="comment-form" id="commentForm">
+                    <textarea placeholder="Write something WAY PAST COOL!" rows="4" required></textarea>
+                    <button type="submit">SUBMIT!</button>
+                </form>
+                <div class="comment-list" id="commentList"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🔊 HIT THAT MUSIC! 🔊</h2>
+            <button id="musicButton">LOADING MUSIC...</button>
+            <audio id="bgMusic" preload="auto">
+                <source src="assets/green-hill-zone.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+    </main>
+
+    <script src="js/utils/storage.js"></script>
+    <script src="js/utils/dom.js"></script>
+    <script src="js/components/navbar.js"></script>
+    <script src="js/components/fanart.js"></script>
+    <script src="js/components/videos.js"></script>
+    <script src="js/components/games.js"></script>
+    <script src="js/components/quiz.js"></script>
+    <script src="js/components/guestbook.js"></script>
+    <script src="js/components/music.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

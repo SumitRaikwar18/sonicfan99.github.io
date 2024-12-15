@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Press Start 2P', cursive;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38GIGBiQAP//wMEGAB89QgdpEjEyQAAAABJRU5ErkJggg==');
+}
+
+#app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+    padding-top: 80px; /* Account for fixed navbar */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+/* Responsive adjustments */
+@media (max-width: var(--mobile-max)) {
+    #app {
+        padding: var(--spacing-sm);
+        padding-top: 70px;
+    }
+
+    .header h1 {
+        font-size: var(--font-size-lg);
+        padding: 0 var(--spacing-md);
+    }
+}
+
+@media (min-width: calc(var(--mobile-max) + 1px)) and (max-width: var(--tablet-max)) {
+    #app {
+        padding: var(--spacing-md);
+        padding-top: 75px;
+    }
+
+    .header h1 {
+        font-size: var(--font-size-xl);
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}

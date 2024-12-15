@@ -1,0 +1,26 @@
+@keyframes rainbow {
+    0% { color: #ff0000; }
+    20% { color: #ffff00; }
+    40% { color: #00ff00; }
+    60% { color: #00ffff; }
+    80% { color: #ff00ff; }
+    100% { color: #ff0000; }
+}
+
+@keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}

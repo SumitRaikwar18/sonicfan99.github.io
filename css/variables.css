@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #00a2ff;
+    --secondary-color: #ff0000;
+    --background-color: #000066;
+    --text-color: #ffffff;
+    --border-color: #00ff00;
+    --accent-color: #ff00ff;
+    --quiz-bg: #000033;
+    
+    /* Breakpoints */
+    --mobile-max: 480px;
+    --tablet-max: 768px;
+    --laptop-max: 1024px;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    
+    /* Font sizes */
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;
+}
